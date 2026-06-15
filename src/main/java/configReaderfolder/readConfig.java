@@ -28,12 +28,12 @@ public class readConfig {
 
     /**
      * Gets the value for the given key.
-     * @param key property name
+     * @param Value property name
      * @return property value
      */
 
-    public static String getProp(String key) {
-        return prop.getProperty(key);
+    public static String getProp(String Value) {
+        return prop.getProperty(Value);
     }
 
 }

@@ -3,8 +3,11 @@ package driversManger;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class driverFactory {
 
@@ -19,12 +22,23 @@ public class driverFactory {
 
         if (browser.equalsIgnoreCase("Chrome")) {
             WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--start-maximized");
+            options.addArguments("--incognito");
+            options.addArguments("--disable-notifications");
             return new ChromeDriver();
         } else if (browser.equalsIgnoreCase("fireFox")) {
             WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--start-maximized");
+            options.addArguments("-private");
             return new FirefoxDriver();
         } else if (browser.equalsIgnoreCase("Edge")) {
             WebDriverManager.edgedriver().setup();
+            EdgeOptions options = new EdgeOptions();
+            options.addArguments("--start-maximized");
+            options.addArguments("--inprivate");
+            options.addArguments("--disable-notifications");
             return new EdgeDriver();
 
         } else {

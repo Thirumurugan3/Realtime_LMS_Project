@@ -77,5 +77,28 @@
           <scope>test</scope>
       </dependency>
 
+      <dependency>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi-ooxml</artifactId>
+          <version>5.2.5</version>
+      </dependency>
+      <dependency>
+          <groupId>io.qameta.allure</groupId>
+          <artifactId>allure-cucumber7-jvm</artifactId>
+          <version>2.29.0</version>
+      </dependency>
+      <!-- Source: https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
+      <dependency>
+          <groupId>io.qameta.allure</groupId>
+          <artifactId>allure-junit4</artifactId>
+          <version>2.35.2</version>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>io.cucumber</groupId>
+          <artifactId>cucumber-testng</artifactId>
+          <version>7.15.0</version> <scope>test</scope>
+      </dependency>
+
   </dependencies>
 </project>
