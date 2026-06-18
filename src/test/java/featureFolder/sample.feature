@@ -1,4 +1,5 @@
-Feature: Login
+Feature: To test Flipkart Website
 
-  Scenario: Read data from Excel
-    Given user gets login data from excel
+  Scenario:Add ten diffrent product to the cart
+
+    Given user Enter the url

@@ -11,7 +11,7 @@ public class clearReport {
     public static void clearAllureResults() {
         try {
             File resultsFolder = new File("allure-results");
-            File reportFolder = new File("allure-results");
+            File reportFolder = new File("allure-report");
 
             if (resultsFolder.exists()|| reportFolder.exists()) {
                 FileUtils.cleanDirectory(resultsFolder);
@@ -20,7 +20,7 @@ public class clearReport {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
+}
     }
 
 }
