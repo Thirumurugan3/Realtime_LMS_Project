@@ -1,0 +1,5 @@
+2026-06-19 23:25:38 [main] INFO  hooks.hooksClass - Browser Launch Started
+2026-06-19 23:25:38 [main] INFO  hooks.hooksClass - Selected Browser : chrome
+2026-06-19 23:25:41 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-19 23:25:41 [main] INFO  hooks.hooksClass - Browser Launched Successfully
+2026-06-19 23:25:41 [main] INFO  hooks.hooksClass - Browser Closed
