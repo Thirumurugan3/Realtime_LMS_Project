@@ -4,6 +4,7 @@ import configReaderfolder.readConfig;
 import driversManger.driverFactory;
 import driversManger.driverManager;
 import aluureReportclear.clearReport;
+import io.cucumber.java.Before;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.AfterClass;
@@ -13,28 +14,10 @@ import utilities.baseClass;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/featureFolder/sample.feature", glue = "stepDefenition",
+@CucumberOptions(features = "src/test/java/featureFolder/sample.feature", glue = {"stepDefenition","hooks"},
         plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )
 
 public class runnerClass extends baseClass {
-
-    @BeforeClass
-    public static void startBrowser() {
-        String browser = readConfig.getProp("browser");
-        driverManager.setDriver(driverFactory.launchBrowser(browser));
-        windowMax();
-    }
-
-
-    @AfterClass
-    public static void tearDown() {
-        driverManager.getDriver().quit();
-    }
-
-    @BeforeClass
-    public static void setup() {
-        clearReport.clearAllureResults();
-    }
 
 }

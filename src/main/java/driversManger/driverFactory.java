@@ -1,5 +1,6 @@
 package driversManger;
 
+import constants.browserConstants;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,26 +21,26 @@ public class driverFactory {
 
     public static WebDriver launchBrowser(String browser) {
 
-        if (browser.equalsIgnoreCase("Chrome")) {
+        if (browser.equalsIgnoreCase(browserConstants.CHROME)) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--start-maximized");
             options.addArguments("--incognito");
             options.addArguments("--disable-notifications");
-            return new ChromeDriver();
-        } else if (browser.equalsIgnoreCase("fireFox")) {
+            return new ChromeDriver(options);
+        } else if (browser.equalsIgnoreCase(browserConstants.FIREFOX)) {
             WebDriverManager.firefoxdriver().setup();
             FirefoxOptions options = new FirefoxOptions();
             options.addArguments("--start-maximized");
             options.addArguments("-private");
-            return new FirefoxDriver();
-        } else if (browser.equalsIgnoreCase("Edge")) {
+            return new FirefoxDriver(options);
+        } else if (browser.equalsIgnoreCase(browserConstants.EDGE)) {
             WebDriverManager.edgedriver().setup();
             EdgeOptions options = new EdgeOptions();
             options.addArguments("--start-maximized");
             options.addArguments("--inprivate");
             options.addArguments("--disable-notifications");
-            return new EdgeDriver();
+            return new EdgeDriver(options);
 
         } else {
             throw new RuntimeException("Browser not Found");
