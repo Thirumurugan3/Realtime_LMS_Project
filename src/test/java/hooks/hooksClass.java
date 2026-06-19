@@ -19,6 +19,9 @@ public class hooksClass {
     @Before
     public void setup() {
 
+        clearReport.clearAllureResults();
+        log.info("Allure report cleared");
+
         log.info("Browser Launch Started");
 
         String browser = System.getProperty("browser");

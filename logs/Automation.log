@@ -3,3 +3,14 @@
 2026-06-19 23:25:41 [main] INFO  utilities.baseClass - Browser window maximized
 2026-06-19 23:25:41 [main] INFO  hooks.hooksClass - Browser Launched Successfully
 2026-06-19 23:25:41 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-19 23:58:40 [main] INFO  hooks.hooksClass - Browser Launch Started
+2026-06-19 23:58:40 [main] INFO  hooks.hooksClass - Selected Browser : chrome
+2026-06-19 23:58:43 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-19 23:58:43 [main] INFO  hooks.hooksClass - Browser Launched Successfully
+2026-06-19 23:58:45 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:04:59 [main] INFO  hooks.hooksClass - Allure report cleared
+2026-06-20 00:04:59 [main] INFO  hooks.hooksClass - Browser Launch Started
+2026-06-20 00:04:59 [main] INFO  hooks.hooksClass - Selected Browser : chrome
+2026-06-20 00:05:01 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:05:01 [main] INFO  hooks.hooksClass - Browser Launched Successfully
+2026-06-20 00:05:01 [main] INFO  hooks.hooksClass - Browser Closed
