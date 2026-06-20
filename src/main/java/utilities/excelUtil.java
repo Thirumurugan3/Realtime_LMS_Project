@@ -3,46 +3,57 @@ package utilities;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import java.io.FileInputStream;
 
 public class excelUtil {
 
-    public static String getData(String filePath, String sheetName, String testCaseID, String columnName) {
+    public static Map<String,String> getTestData(
+            String filePath,
+            String sheetName,
+            String tcid){
+
+        Map<String,String> data = new HashMap<>();
 
         try {
 
-            FileInputStream fis = new FileInputStream(filePath);
-            Workbook workbook = new XSSFWorkbook(fis);
-            Sheet sheet = workbook.getSheet(sheetName);
+            FileInputStream fis =
+                    new FileInputStream(filePath);
 
-            Row headerRow = sheet.getRow(0);
+            Workbook workbook =
+                    new XSSFWorkbook(fis);
 
-            int columnIndex = -1;
+            Sheet sheet =
+                    workbook.getSheet(sheetName);
 
-            for(int i=0;i<headerRow.getLastCellNum();i++){
-
-                if(headerRow.getCell(i).getStringCellValue()
-                        .equalsIgnoreCase(columnName)){
-
-                    columnIndex=i;
-                    break;
-                }
-            }
+            Row headerRow =
+                    sheet.getRow(0);
 
             for(int i=1;i<=sheet.getLastRowNum();i++){
 
                 Row row = sheet.getRow(i);
 
-                if(row.getCell(0).getStringCellValue()
-                        .equalsIgnoreCase(testCaseID)){
+                if(row.getCell(0)
+                        .getStringCellValue()
+                        .equalsIgnoreCase(tcid)){
+                    System.out.println("MATCH FOUND");
 
-                    String value =
-                            row.getCell(columnIndex).toString();
+                    for(int j=0;
+                        j<headerRow.getLastCellNum();
+                        j++){
 
-                    workbook.close();
-                    fis.close();
+                        data.put(
+                                headerRow.getCell(j)
+                                        .getStringCellValue(),
 
-                    return value;
+                                row.getCell(j)
+                                        .toString()
+                        );
+                    }
+
+                    break;
                 }
             }
 
@@ -53,6 +64,6 @@ public class excelUtil {
             throw new RuntimeException(e);
         }
 
-        return null;
+        return data;
     }
 }

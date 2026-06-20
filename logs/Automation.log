@@ -14,3 +14,75 @@
 2026-06-20 00:05:01 [main] INFO  utilities.baseClass - Browser window maximized
 2026-06-20 00:05:01 [main] INFO  hooks.hooksClass - Browser Launched Successfully
 2026-06-20 00:05:01 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:27:01 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:27:01 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:27:02 [main] ERROR hooks.hooksClass - Scenario Failed : Add ten diffrent product to the cart
+2026-06-20 00:27:02 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:28:54 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:28:56 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:28:56 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:28:56 [main] ERROR hooks.hooksClass - Scenario Failed : Add ten diffrent product to the cart
+2026-06-20 00:28:57 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:32:39 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:32:41 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:32:41 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:32:41 [main] ERROR hooks.hooksClass - Scenario Failed : Login with valid credentials
+2026-06-20 00:32:41 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:37:11 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:37:13 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:37:13 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:37:13 [main] ERROR hooks.hooksClass - Scenario Failed : Login with valid credentials
+2026-06-20 00:37:14 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:40:11 [main] INFO  hooks.hooksClass - TCID = null
+2026-06-20 00:40:13 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:40:15 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:40:15 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:40:15 [main] INFO  stepDefenition.stepDefclass - Username : null
+2026-06-20 00:40:15 [main] INFO  stepDefenition.stepDefclass - Password : null
+2026-06-20 00:40:15 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:45:26 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:45:28 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:45:28 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:45:28 [main] INFO  stepDefenition.stepDefclass - Username : null
+2026-06-20 00:45:28 [main] INFO  stepDefenition.stepDefclass - Password : null
+2026-06-20 00:45:29 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:49:12 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:49:14 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:49:14 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:49:14 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:54:37 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:54:39 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:54:39 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:54:39 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:57:03 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:57:05 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:57:05 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:57:05 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 00:57:22 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 00:57:25 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 00:57:25 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 00:57:25 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 10:31:22 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 10:31:29 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 10:31:30 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 10:31:30 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 10:40:53 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 10:40:56 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 10:40:56 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 10:40:56 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 10:55:11 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 10:55:14 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 10:55:14 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 10:55:15 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 10:56:29 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 10:56:32 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 10:56:32 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 10:56:33 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 10:59:12 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 10:59:15 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 10:59:15 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 10:59:16 [main] INFO  hooks.hooksClass - Browser Closed
+2026-06-20 10:59:16 [main] INFO  hooks.hooksClass - Allure reports cleared
+2026-06-20 10:59:18 [main] INFO  utilities.baseClass - Browser window maximized
+2026-06-20 10:59:18 [main] INFO  hooks.hooksClass - Browser launched : chrome
+2026-06-20 10:59:18 [main] INFO  hooks.hooksClass - Browser Closed

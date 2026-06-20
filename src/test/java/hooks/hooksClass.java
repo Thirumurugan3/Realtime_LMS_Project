@@ -9,50 +9,57 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utilities.baseClass;
 import org.apache.logging.log4j.Logger;
+import utilities.excelUtil;
 import utilities.loggerUtil;
+import utilities.testdataManager;
+
+import java.util.Map;
 
 public class hooksClass {
 
     private static final Logger log =
             loggerUtil.getLogger(hooksClass.class);
 
+
     @Before
     public void setup() {
 
         clearReport.clearAllureResults();
-        log.info("Allure report cleared");
+        log.info("Allure reports cleared");
 
-        log.info("Browser Launch Started");
+        String browser =
+                System.getProperty("browser");
 
-        String browser = System.getProperty("browser");
-
-        if(browser == null || browser.isEmpty()){
+        if (browser == null || browser.isEmpty()) {
             browser = readConfig.getProp("browser");
         }
-
-        log.info("Selected Browser : {}", browser);
 
         driverManager.setDriver(
                 driverFactory.launchBrowser(browser));
 
         baseClass.windowMax();
 
-        log.info("Browser Launched Successfully");
+        log.info("Browser launched : {}", browser);
     }
 
     @After
     public void tearDown(Scenario scenario) {
 
-        if(scenario.isFailed()) {
-
-            log.error("Scenario Failed : {}",
-                    scenario.getName());
+        if (scenario.isFailed()) {
 
             clearReport.takeScreenshotForAllure(
                     "Failed Screenshot");
+
+            log.error("Scenario Failed : {}",
+                    scenario.getName());
         }
 
-        driverManager.getDriver().quit();
+        testdataManager.unloadData();
+
+        if (driverManager.getDriver() != null) {
+            driverManager.getDriver().quit();
+            driverManager.setDriver(null);
+        }
 
         log.info("Browser Closed");
     }

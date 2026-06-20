@@ -1,5 +1,9 @@
-Feature: To test Flipkart Website
+Feature: Login
+  Scenario Outline: Login Test
 
-  Scenario:Add ten diffrent product to the cart
-
-    Given user Enter the url
+    Given user data "<Testcase_ID>"
+    When user enters credentials
+    Examples:
+      | Testcase_ID |
+      | TC_001      |
+      | TC_002      |
